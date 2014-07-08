@@ -1,0 +1,10 @@
+target 'SPLLinearGradientView', :exclusive => true do
+  pod "SPLLinearGradientView", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "SPLLinearGradientView", :path => "../"
+
+  pod 'Specta', '~> 0.2.1'
+  pod 'Expecta'
+end
