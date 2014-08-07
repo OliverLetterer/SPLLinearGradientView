@@ -5,11 +5,16 @@
 [![License](https://img.shields.io/cocoapods/l/SPLLinearGradientView.svg?style=flat)](http://cocoadocs.org/docsets/SPLLinearGradientView)
 [![Platform](https://img.shields.io/cocoapods/p/SPLLinearGradientView.svg?style=flat)](http://cocoadocs.org/docsets/SPLLinearGradientView)
 
+SPLLinearGradientView is a UIView subclass that draws a linear gradient.
+
 ## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```
+SPLLinearGradientView *gradientView = [[SPLLinearGradientView alloc] initWithFrame...];
 
-## Requirements
+gradientView.colors = @[ ... ];
+[gradientView setColors:@[ ... ] atLocations:...];
+```
 
 ## Installation
 
@@ -25,4 +30,3 @@ Oliver Letterer, oliver.letterer@gmail.com
 ## License
 
 SPLLinearGradientView is available under the MIT license. See the LICENSE file for more info.
-

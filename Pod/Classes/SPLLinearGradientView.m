@@ -1,18 +1,31 @@
-//
-//  SPLLinearGradientView.m
-//  Pods
-//
-//  Created by Oliver Letterer on 14.11.13.
-//  Copyright 2013 __MyCompanyName__. All rights reserved.
-//
+/**
+  SPLLinearGradientView
+  Copyright (c) 2014 Oliver Letterer <oliver.letterer@gmail.com>, Sparrow-Labs
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+  THE SOFTWARE.
+*/
 
 #import "SPLLinearGradientView.h"
 
 
 
-@interface SPLLinearGradientView () {
-    
-}
+@interface SPLLinearGradientView ()
 
 @property (nonatomic, assign) CGGradientRef gradient;
 
@@ -78,7 +91,7 @@
         self.backgroundColor = [UIColor clearColor];
         self.layer.opaque = NO;
         self.layer.needsDisplayOnBoundsChange = YES;
-        self.colors = @[ [UIColor colorWithRed:240.0f/255.0f green:240.0f/255.0f blue:240.0f/255.0f alpha:1.0f], [UIColor colorWithRed:192.0f/255.0f green:192.0f/255.0f blue:192.0f/255.0f alpha:1.0f]];
+        self.colors = @[ [UIColor colorWithRed:240.0 / 255.0 green:240.0 / 255.0 blue:240.0 / 255.0 alpha:1.0], [UIColor colorWithRed:192.0 /255.0 green:192.0 /255.0 blue:192.0 /255.0 alpha:1.0]];
     }
     return self;
 }
@@ -91,9 +104,9 @@
 
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextDrawLinearGradient(context, _gradient,
-                                CGPointMake(CGRectGetWidth(self.bounds) / 2.0f, 0.0f),
-                                CGPointMake(CGRectGetWidth(self.bounds) / 2.0f, CGRectGetHeight(self.bounds)),
-                                0.0f);
+                                CGPointMake(CGRectGetWidth(self.bounds) / 2.0, 0.0),
+                                CGPointMake(CGRectGetWidth(self.bounds) / 2.0, CGRectGetHeight(self.bounds)),
+                                0.0);
 }
 
 #pragma mark - Memory management
