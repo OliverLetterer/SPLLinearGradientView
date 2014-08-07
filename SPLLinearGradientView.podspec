@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SPLLinearGradientView"
-  s.version          = "0.1.0"
+  s.version          = "0.1.1"
   s.summary          = "UIView subclass that draws a linear gradient."
   s.homepage         = "https://bitbucket.org/sparrowlabsde/spllineargradientview"
   s.license          = 'MIT'
