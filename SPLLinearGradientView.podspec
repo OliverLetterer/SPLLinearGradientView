@@ -11,10 +11,10 @@ Pod::Spec.new do |s|
   s.name             = "SPLLinearGradientView"
   s.version          = "0.1.1"
   s.summary          = "UIView subclass that draws a linear gradient."
-  s.homepage         = "https://bitbucket.org/sparrowlabsde/spllineargradientview"
+  s.homepage         = "https://github.com/OliverLetterer/SPLLinearGradientView"
   s.license          = 'MIT'
   s.author           = { "Oliver Letterer" => "oliver.letterer@gmail.com" }
-  s.source           = { :git => "git@bitbucket.org:sparrowlabsde/spllineargradientview.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/OliverLetterer/SPLLinearGradientView.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/oletterer'
 
   s.platform     = :ios, '7.0'
